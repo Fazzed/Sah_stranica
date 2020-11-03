@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šah</title>
+</head>
+<body bgcolor="#DFCFBE">
+    <h1><center>Šah</center></h1> <img src="Slike/Šah.png" alt="Šahovska ploča i figure" width="25%" align="right">
+    
+    <br><br><hr color="#202122">
+    
+    <p>
+        <h2>Opis igre:</h2>
+        <h4>Šah je igra za dva igrača. Sastoji se od šahovske ploče koja je dimenzija 8x8 i od 32 figure. <br>
+            Igrač koji počinje prvi dobija figure bijele boje, a igrač koji počinje drugi ima crne figure što daje prvom igraču malu prednost. <br>
+            Cilj igre je napraviti mat na protivničkog kralja.<br>
+            Šah se dijeli na tri osnovne kategoriju, a to su: klasnični ili spori, srednje brzi i brzi šah. Razlika između njih je vrijeme između igranja poteza, sva tri kategorije imaju svoja svjetska prvenstva.
+        </h4>
+    </p>
+
+    <br><hr color="#202122"><br>
+
+    <p>
+        <table width="50%" cellspacing="15">
+            <tr>
+                <th>Figura </th>
+                <th>Način kretanja</th>
+                <th>Početna pozicija kod bijelog igrača</th>
+                <th>Početna pozicija kod crnog igrača</th>
+              </tr>
+              <tr>
+                <td>Kraljica</td>
+                <td>Najjača figura, kreće se neograničen broj slobodnih polja u svim smjerovima: okomito, vodoravno i dijagonalno, ali ne može preskakati figure.</td>
+                <td>D1</td>
+                <td>D8</td>
+              </tr>
+              <tr>
+                <td>Kralj</td>
+                <td>Može pokretati svim smjerovima za jedno polje, ali ne smije doći na mjesto koje napada bilo koja suparnička figura.</td>
+                <td>E1</td>
+                <td>E8</td>
+              </tr>
+              <tr>
+                <td>Top</td>
+                <td>Kreće se neogranićen broj slobodnih mjesta horizontalno i vodoravno.</td>
+                <td>A1 i H1</td>
+                <td>A8 i H8</td>
+              </tr>
+              <tr>
+                <td>Lovac</td>
+                <td>Kreće se neogranićen broj slobodnih mjesta okomito.</td>
+                <td>C1 i F1</td>
+                <td>C8 i F8</td>
+              </tr>
+              <tr>
+                <td>Konj</td>
+                <td>Jedina figura koja može preskočiti drugu figuru, svoju ili protivničku. Kreće se u obliku slova L: dva polja ravno, zatim jedno polje lijevo ili desno, na bilo koju stranu.</td>
+                <td>B1 i G1</td>
+                <td>B8 i G8</td>
+              </tr>
+              <tr>
+                <td>Pješak</td>
+                <td>Kreće se isključivo prema naprijed. Iz početne pozicije, na drugom redu, može ići naprijed za jedno ili za dva polja, a nakon toga samo za po jedno polje, ali jesti može samo ukoso na prvo polje prema naprijed</td>
+                <td>A2, B2, C2, D2, E2, F2, G2 i H2</td>
+                <td>A7, B7, C7, D7, E7, F7, G7 i H7</td>
+            </tr>
+
+        </table>
+    </p>
+
+    <br><hr color="#202122"><br>
+
+    <p>
+        <h2>Terminologija:</h2>
+        <dl>
+            <dt><h3><strong>Mat</strong></h3></dt>
+                <dd><h4>Postaviti protivničkog kralja u poziciju gdje je on napadnut i gdje se ne može kretati zato što bi opet bio napadnut.</h4></dd>
+
+        <pre><h3>                                                                                                                                                                                                Primjer en passant poteza</h3></pre>
+        <img src="Animacije/En passant.gif" alt="En passant" width="400px" height="400px" align="right">
+        
+            <dt><h3><strong>Šah</strong></h3></dt>
+                <dd><h4>Ako je protivnički kralj u poziciji gdje je napadnut onda je u šahu. Kralj se mora pomaknuti ili protivnik mora pojesti figuru koja ga napada ili staviti figuru da blokira napad na kralja.</h4></dd>
+            
+            <dt><h3><strong>Rokada</strong></h3></dt>
+                <dd><h4>Zamjena pozicije kralja i topa, između kralja i topa ne smije biti niti jedna druga figura kako bi se rokada izvršila, također niti jedno polje između kralja i topa ne smije biti napadnuto.</h4></dd>
+            
+            <dt><h3><strong>Forsiran potez</strong></h3></dt>
+                <dd><h4>Kada je kralj u šahu igrač mora igrati bilo koji mogući potez da zaustavi šah, čak i ako je potez sam po sebi loš on je forsiran te se mora odigrati.</h4></dd>
+            
+            <dt><h3><strong>En passant</strong></h3></dt>
+                <dd><h4>En passant je potez pješakom u šahu. Označava usputno uzimanje pješaka pješakom, kada je pješak sa svoje početne pozicije pomjeren za dva polja prošavši pored protivničkog pješaka, <br>
+                koji ga može (ali ne mora) uzeti, ali ga može uzeti samo u narednom potezu. Ako je to jedini potez, onda se pješak mora uzeti.</h4></dd>
+            
+            <dt><h3><strong>Promocija</strong></h3></dt>
+                <dd><h4>Kada pješak dođe do zadnjeg ranka on se zamjenjuje za novu figuru (kraljicu, topa, lovca ili konja).</h4></dd>
+        
+            <dt><h3><strong>Gambit</strong></h3></dt>
+                <dd><h4>Vrsta otvaranja u kojem igrač (najčešće bijeli) žrtvuje manje vrijedne figure kako bi dobio prednost u razvijanju figura ili kako bi zadobio polja D4, D5, E4 i E5, tj. centar.</h4></dd>
+        
+        </dl>
+    </p>
+
+    <br><hr color="#202122"><br>
+
+    <p>
+        <img src="Slike/Šah notacija.png" alt="Notacije u šahu" width="350px" height="350px" align="right" >
+        <h2>Notacija šahovske ploče</h2>
+        <h4>Na šahovskoj ploči se koristi algebarska notacija, što znači da su stupci označeni slovima od A do H, a redovi brojevima od 1 do 8. Ovaj način je se pokazao <br>
+        kao najjednostavniji za zapamtiti i najlakši je za zabilježavanje poteza odigrane partije. Prva upotreba ove notacije je bila 1173. godine u Francuskoj, a od 19. stoljeća <br>
+        se koristi kao standardna notacija na svim natjecanjima i turnirima. <br>
+    </h4>
+    </p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><hr color="#202122"><br>
+
+    <p>
+        <h2>Moderna promjene pravila šaha</h2>
+        <h4>
+        1470-tih godina je nepoznati španjolski šahist donio promjene u igru kako bi ju učinio bržom, zanimljivijom i više orijentiranom napadanju. <br>
+        Igru je nazvao "De la dama" zato što je u njegovoj verziji šaha kraljica bila najjača figura, isto kao i danas, lovac je <br>
+        se mogao kretati neograničeno polja po dijagonalama, dok je do tada se najviše mogao kretati dva polja. <br>
+        Kraljica je sada mogla kretati neograničeno poteza po dijagonalama i po linijama, dok je do tada mogla samo kretati dva polja <br>
+        po dijagonalama i dva po liniji. Ove promjene su se proširile u druge države, najviše u Italiju i Francusku <br>
+        iz koje su nakon toga dolazili najjači igrači šaha tog doba. Prvi izuzetno dobar igrač šaha je bio biskup Ruy Lopez de Segura <br>
+        po kojem je danas nazvana najpoznatija varijacija talijanske igre, analizirao je, za današnje vrijeme, osnovne završnice šaha i <br>
+        izmislio osnovne elemente bilo kojeg otvaranja koji se i dan danas koriste. <br>
+        Drugi igrač koji je i dan danas izuzetno poznat po svojim napadima pomoću kojih se danas početnicima objašnjava napadanje <br>
+        je El Greco. El Greco je posvetio cijeli svoj život šahu, pravio je brojne zagonetke i pobjeđivao svaki turnir u kojem je učestvovao.
+        </h4>
+    </p>
+
+    <br><hr color="#202122"><br>
+
+    <p>
+        <h2>Moderno doba šaha</h2>
+        <dl>
+            <dt><h3><strong>Romantična era</strong></h3></dt>
+                <dd><h4>Šahovski romantizam je se odvijao u 19. stoljeću. To je doba poznato po svojim žrtvama, otvorenim igrama (skoro svaka partija je počinjala s potezima E4-E5), <br>
+                    raznim napadima i naprednim taktikama. U romantičnim partijama su se često igrali razni gambiti poput kraljevog i Evansovog gambita, partije su završavale u <br>
+                    20-30 poteza i to najčešće jako dobrim napadom ili jako dobrom obranom gdje napadač gubi sve resurse. Glavna ideja otvaranja u romatično doba <br> 
+                    je zadobiti centar pomoću pješaka i brzo se razviti. Najbolji igrači tog doba su bili: Paul Charles Morphy, Adolf Anderssen i Henry Blackburne.</h4></dd>
+
+            <dt><h3><strong>Moderna era</strong></h3></dt>
+                <dd><h4>Moderna era je bio prvi znak pozicionalnog igranja šaha što znači da partije nisu završavale napadima nego dugim strateškim planovima. Počela su se koristiti <br>
+                D4-D5 otvaranja koja su više pozicionalna naspram E4-E5 otvaranja. Prvi uspješni moderni/pozicionalni igrač je bio Wilhem Steinz koji je sa svojim pozicionalnim znanjem <br>
+                osvojio prvo svjetsko prvenstvo u šahu.</h4></dd>
+
+            <dt><h3><strong>Hipermoderna era</strong></h3></dt>
+                <dd><h4> Hipermodernizam je era koja započinje 1930-tih godina, od tada se događaju velike promjene u otvaranjima, a ne u ostalim dijelovima partije. Hipermodernizam je <br>
+                    bio poseban po svojoj logici osvajanja centra, poznati hipermodernisti poput Retia i Nimzowitscha su napadali centar figurama umjesto da stavljaju pješake na početku, <br>
+                    te bi nakon 10-tak poteza otvorili centar potezom pješaka. Ovaj način igranja otvaranja je zahtijevao jako veliku preciznost u potezima, te se nisu smjele raditi nikakve <br> 
+                    greške na početku zato što bi to najčešće rezultiralo porazom.</h4></dd>
+        </dl>
+    </p>
+
+    <br><hr color="#202122"><br>
+
+    <p>
+        <h2>Najbolji trenutni igrači šaha</h2>
+        <table width = "30%" cellspacing="15">
+            <tr>
+                <th>Rank</th>
+                <th>Elo</th>
+                <th>Država</th>
+            </tr>
+            <tr>
+                <td><a href="MagnusCarlsen.html">Magnus Carlsen</a></td>
+                <td>2872</td>
+                <td>Norveška</td>
+            </tr>
+            <tr>
+                <td><a href="FabianoCaruana.html">Fabiano Caruana</a></td>
+                <td>2822</td>
+                <td>SAD</td>
+            </tr>
+            <tr>
+                <td><a href="DingLiren.html">Ding Liren</a></td>
+                <td>2805</td>
+                <td>Kina</td>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>
+
